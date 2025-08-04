@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/blasteroids.dir/blasteroids.c.obj"
   "CMakeFiles/blasteroids.dir/blasteroids.c.obj.d"
+  "CMakeFiles/blasteroids.dir/ship.c.obj"
+  "CMakeFiles/blasteroids.dir/ship.c.obj.d"
   "blasteroids.exe"
   "blasteroids.exe.manifest"
   "blasteroids.pdb"

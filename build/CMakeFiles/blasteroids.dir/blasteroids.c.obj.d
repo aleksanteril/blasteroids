@@ -80,4 +80,11 @@ CMakeFiles/blasteroids.dir/blasteroids.c.obj: \
  C:/msys64/ucrt64/include/allegro5/timer.h \
  C:/msys64/ucrt64/include/allegro5/tls.h \
  C:/msys64/ucrt64/include/allegro5/alcompat.h \
- C:/msys64/ucrt64/include/allegro5/platform/alwin.h
+ C:/msys64/ucrt64/include/allegro5/platform/alwin.h \
+ C:/msys64/ucrt64/include/allegro5/allegro_primitives.h \
+ C:\ohjelmat\blasteroids\ship.h \
+ C:/msys64/ucrt64/include/allegro5/allegro_color.h \
+ C:\ohjelmat\blasteroids\blast.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h

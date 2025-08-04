@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/ohjelmat/blasteroids/blasteroids.c" "CMakeFiles/blasteroids.dir/blasteroids.c.obj" "gcc" "CMakeFiles/blasteroids.dir/blasteroids.c.obj.d"
+  "C:/ohjelmat/blasteroids/ship.c" "CMakeFiles/blasteroids.dir/ship.c.obj" "gcc" "CMakeFiles/blasteroids.dir/ship.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

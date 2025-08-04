@@ -152,6 +152,30 @@ blasteroids.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/blasteroids.c.s
 .PHONY : blasteroids.c.s
 
+ship.obj: ship.c.obj
+.PHONY : ship.obj
+
+# target to build an object file
+ship.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.obj
+.PHONY : ship.c.obj
+
+ship.i: ship.c.i
+.PHONY : ship.i
+
+# target to preprocess a source file
+ship.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.i
+.PHONY : ship.c.i
+
+ship.s: ship.c.s
+.PHONY : ship.s
+
+# target to generate assembly for a file
+ship.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.s
+.PHONY : ship.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... blasteroids.obj
 	@echo ... blasteroids.i
 	@echo ... blasteroids.s
+	@echo ... ship.obj
+	@echo ... ship.i
+	@echo ... ship.s
 .PHONY : help
 
 

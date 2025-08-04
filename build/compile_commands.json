@@ -4,5 +4,11 @@
   "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\blasteroids.c.obj -c C:\\ohjelmat\\blasteroids\\blasteroids.c",
   "file": "C:/ohjelmat/blasteroids/blasteroids.c",
   "output": "CMakeFiles/blasteroids.dir/blasteroids.c.obj"
+},
+{
+  "directory": "C:/ohjelmat/blasteroids/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\ship.c.obj -c C:\\ohjelmat\\blasteroids\\ship.c",
+  "file": "C:/ohjelmat/blasteroids/ship.c",
+  "output": "CMakeFiles/blasteroids.dir/ship.c.obj"
 }
 ]
