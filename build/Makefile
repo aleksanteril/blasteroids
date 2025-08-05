@@ -128,53 +128,125 @@ blasteroids/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/build
 .PHONY : blasteroids/fast
 
-blasteroids.obj: blasteroids.c.obj
-.PHONY : blasteroids.obj
+src/asteroid.obj: src/asteroid.c.obj
+.PHONY : src/asteroid.obj
 
 # target to build an object file
-blasteroids.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/blasteroids.c.obj
-.PHONY : blasteroids.c.obj
+src/asteroid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/asteroid.c.obj
+.PHONY : src/asteroid.c.obj
 
-blasteroids.i: blasteroids.c.i
-.PHONY : blasteroids.i
+src/asteroid.i: src/asteroid.c.i
+.PHONY : src/asteroid.i
 
 # target to preprocess a source file
-blasteroids.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/blasteroids.c.i
-.PHONY : blasteroids.c.i
+src/asteroid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/asteroid.c.i
+.PHONY : src/asteroid.c.i
 
-blasteroids.s: blasteroids.c.s
-.PHONY : blasteroids.s
+src/asteroid.s: src/asteroid.c.s
+.PHONY : src/asteroid.s
 
 # target to generate assembly for a file
-blasteroids.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/blasteroids.c.s
-.PHONY : blasteroids.c.s
+src/asteroid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/asteroid.c.s
+.PHONY : src/asteroid.c.s
 
-ship.obj: ship.c.obj
-.PHONY : ship.obj
+src/blast.obj: src/blast.c.obj
+.PHONY : src/blast.obj
 
 # target to build an object file
-ship.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.obj
-.PHONY : ship.c.obj
+src/blast.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blast.c.obj
+.PHONY : src/blast.c.obj
 
-ship.i: ship.c.i
-.PHONY : ship.i
+src/blast.i: src/blast.c.i
+.PHONY : src/blast.i
 
 # target to preprocess a source file
-ship.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.i
-.PHONY : ship.c.i
+src/blast.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blast.c.i
+.PHONY : src/blast.c.i
 
-ship.s: ship.c.s
-.PHONY : ship.s
+src/blast.s: src/blast.c.s
+.PHONY : src/blast.s
 
 # target to generate assembly for a file
-ship.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/ship.c.s
-.PHONY : ship.c.s
+src/blast.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blast.c.s
+.PHONY : src/blast.c.s
+
+src/blasteroids.obj: src/blasteroids.c.obj
+.PHONY : src/blasteroids.obj
+
+# target to build an object file
+src/blasteroids.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blasteroids.c.obj
+.PHONY : src/blasteroids.c.obj
+
+src/blasteroids.i: src/blasteroids.c.i
+.PHONY : src/blasteroids.i
+
+# target to preprocess a source file
+src/blasteroids.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blasteroids.c.i
+.PHONY : src/blasteroids.c.i
+
+src/blasteroids.s: src/blasteroids.c.s
+.PHONY : src/blasteroids.s
+
+# target to generate assembly for a file
+src/blasteroids.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/blasteroids.c.s
+.PHONY : src/blasteroids.c.s
+
+src/physics.obj: src/physics.c.obj
+.PHONY : src/physics.obj
+
+# target to build an object file
+src/physics.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/physics.c.obj
+.PHONY : src/physics.c.obj
+
+src/physics.i: src/physics.c.i
+.PHONY : src/physics.i
+
+# target to preprocess a source file
+src/physics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/physics.c.i
+.PHONY : src/physics.c.i
+
+src/physics.s: src/physics.c.s
+.PHONY : src/physics.s
+
+# target to generate assembly for a file
+src/physics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/physics.c.s
+.PHONY : src/physics.c.s
+
+src/ship.obj: src/ship.c.obj
+.PHONY : src/ship.obj
+
+# target to build an object file
+src/ship.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/ship.c.obj
+.PHONY : src/ship.c.obj
+
+src/ship.i: src/ship.c.i
+.PHONY : src/ship.i
+
+# target to preprocess a source file
+src/ship.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/ship.c.i
+.PHONY : src/ship.c.i
+
+src/ship.s: src/ship.c.s
+.PHONY : src/ship.s
+
+# target to generate assembly for a file
+src/ship.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/src/ship.c.s
+.PHONY : src/ship.c.s
 
 # Help Target
 help:
@@ -185,12 +257,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... blasteroids
-	@echo ... blasteroids.obj
-	@echo ... blasteroids.i
-	@echo ... blasteroids.s
-	@echo ... ship.obj
-	@echo ... ship.i
-	@echo ... ship.s
+	@echo ... src/asteroid.obj
+	@echo ... src/asteroid.i
+	@echo ... src/asteroid.s
+	@echo ... src/blast.obj
+	@echo ... src/blast.i
+	@echo ... src/blast.s
+	@echo ... src/blasteroids.obj
+	@echo ... src/blasteroids.i
+	@echo ... src/blasteroids.s
+	@echo ... src/physics.obj
+	@echo ... src/physics.i
+	@echo ... src/physics.s
+	@echo ... src/ship.obj
+	@echo ... src/ship.i
+	@echo ... src/ship.s
 .PHONY : help
 
 

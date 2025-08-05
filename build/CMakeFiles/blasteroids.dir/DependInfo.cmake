@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/ohjelmat/blasteroids/blasteroids.c" "CMakeFiles/blasteroids.dir/blasteroids.c.obj" "gcc" "CMakeFiles/blasteroids.dir/blasteroids.c.obj.d"
-  "C:/ohjelmat/blasteroids/ship.c" "CMakeFiles/blasteroids.dir/ship.c.obj" "gcc" "CMakeFiles/blasteroids.dir/ship.c.obj.d"
+  "C:/ohjelmat/blasteroids/src/asteroid.c" "CMakeFiles/blasteroids.dir/src/asteroid.c.obj" "gcc" "CMakeFiles/blasteroids.dir/src/asteroid.c.obj.d"
+  "C:/ohjelmat/blasteroids/src/blast.c" "CMakeFiles/blasteroids.dir/src/blast.c.obj" "gcc" "CMakeFiles/blasteroids.dir/src/blast.c.obj.d"
+  "C:/ohjelmat/blasteroids/src/blasteroids.c" "CMakeFiles/blasteroids.dir/src/blasteroids.c.obj" "gcc" "CMakeFiles/blasteroids.dir/src/blasteroids.c.obj.d"
+  "C:/ohjelmat/blasteroids/src/physics.c" "CMakeFiles/blasteroids.dir/src/physics.c.obj" "gcc" "CMakeFiles/blasteroids.dir/src/physics.c.obj.d"
+  "C:/ohjelmat/blasteroids/src/ship.c" "CMakeFiles/blasteroids.dir/src/ship.c.obj" "gcc" "CMakeFiles/blasteroids.dir/src/ship.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,20 +1,19 @@
-#include "ship.h"
+#include "../header/ship.h"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include <math.h>
-#include "settings.h"
 
 const int SPEED_MAX = 10;
 const int SPEED_MIN = 0;
 
-void ship_graphics(SPACESHIP *ship) {
+void ship_graphics(Spaceship *ship) {
       al_draw_line(-8, 9, 0, -11, ship->color, 3.0f);
       al_draw_line(0, -11, 8, 9, ship->color, 3.0f);
       al_draw_line(-6, 4, -1, 4, ship->color, 3.0f);
       al_draw_line(6, 4, 1, 4, ship->color, 3.0f);
 }
 
-void draw_ship(SPACESHIP *ship) {
+void draw_ship(Spaceship *ship) {
       ALLEGRO_TRANSFORM transform;
       al_identity_transform(&transform);
       al_rotate_transform(&transform, ship->heading);
@@ -27,7 +26,7 @@ void draw_ship(SPACESHIP *ship) {
 extern int display_x;
 extern int display_y;
 
-void calculate_ship_movements(SPACESHIP *ship) {
+void calculate_ship_movements(Spaceship *ship) {
       //Limits
       //No reverse
       if (ship->speed < SPEED_MIN) 
@@ -44,7 +43,7 @@ void calculate_ship_movements(SPACESHIP *ship) {
       ship->y = fmod(ship->y + display_y, display_y);
 }
 
-SPACESHIP init_ship() {
-      SPACESHIP ship = {20, 20, 0, 0, 0, al_map_rgb(0, 255, 0)};
+Spaceship init_ship() {
+      Spaceship ship = {0, 0, 0, 0, 0, al_map_rgb(0, 255, 0)};
       return ship;
 }

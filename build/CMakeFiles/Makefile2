@@ -84,12 +84,12 @@ clean: CMakeFiles/blasteroids.dir/clean
 CMakeFiles/blasteroids.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=1,2,3 "Built target blasteroids"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target blasteroids"
 .PHONY : CMakeFiles/blasteroids.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/blasteroids.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\ohjelmat\blasteroids\build\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\ohjelmat\blasteroids\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/blasteroids.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\ohjelmat\blasteroids\build\CMakeFiles 0
 .PHONY : CMakeFiles/blasteroids.dir/rule
@@ -101,7 +101,7 @@ blasteroids: CMakeFiles/blasteroids.dir/rule
 # codegen rule for target.
 CMakeFiles/blasteroids.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\blasteroids.dir\build.make CMakeFiles/blasteroids.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target blasteroids"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target blasteroids"
 .PHONY : CMakeFiles/blasteroids.dir/codegen
 
 # clean rule for target.

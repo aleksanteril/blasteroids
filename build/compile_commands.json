@@ -1,14 +1,32 @@
 [
 {
   "directory": "C:/ohjelmat/blasteroids/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\blasteroids.c.obj -c C:\\ohjelmat\\blasteroids\\blasteroids.c",
-  "file": "C:/ohjelmat/blasteroids/blasteroids.c",
-  "output": "CMakeFiles/blasteroids.dir/blasteroids.c.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\src\\ship.c.obj -c C:\\ohjelmat\\blasteroids\\src\\ship.c",
+  "file": "C:/ohjelmat/blasteroids/src/ship.c",
+  "output": "CMakeFiles/blasteroids.dir/src/ship.c.obj"
 },
 {
   "directory": "C:/ohjelmat/blasteroids/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\ship.c.obj -c C:\\ohjelmat\\blasteroids\\ship.c",
-  "file": "C:/ohjelmat/blasteroids/ship.c",
-  "output": "CMakeFiles/blasteroids.dir/ship.c.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\src\\physics.c.obj -c C:\\ohjelmat\\blasteroids\\src\\physics.c",
+  "file": "C:/ohjelmat/blasteroids/src/physics.c",
+  "output": "CMakeFiles/blasteroids.dir/src/physics.c.obj"
+},
+{
+  "directory": "C:/ohjelmat/blasteroids/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\src\\asteroid.c.obj -c C:\\ohjelmat\\blasteroids\\src\\asteroid.c",
+  "file": "C:/ohjelmat/blasteroids/src/asteroid.c",
+  "output": "CMakeFiles/blasteroids.dir/src/asteroid.c.obj"
+},
+{
+  "directory": "C:/ohjelmat/blasteroids/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\src\\blast.c.obj -c C:\\ohjelmat\\blasteroids\\src\\blast.c",
+  "file": "C:/ohjelmat/blasteroids/src/blast.c",
+  "output": "CMakeFiles/blasteroids.dir/src/blast.c.obj"
+},
+{
+  "directory": "C:/ohjelmat/blasteroids/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\blasteroids.dir\\src\\blasteroids.c.obj -c C:\\ohjelmat\\blasteroids\\src\\blasteroids.c",
+  "file": "C:/ohjelmat/blasteroids/src/blasteroids.c",
+  "output": "CMakeFiles/blasteroids.dir/src/blasteroids.c.obj"
 }
 ]

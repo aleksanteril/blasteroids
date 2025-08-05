@@ -71,49 +71,97 @@ include CMakeFiles/blasteroids.dir/flags.make
 CMakeFiles/blasteroids.dir/codegen:
 .PHONY : CMakeFiles/blasteroids.dir/codegen
 
-CMakeFiles/blasteroids.dir/blasteroids.c.obj: CMakeFiles/blasteroids.dir/flags.make
-CMakeFiles/blasteroids.dir/blasteroids.c.obj: C:/ohjelmat/blasteroids/blasteroids.c
-CMakeFiles/blasteroids.dir/blasteroids.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blasteroids.dir/blasteroids.c.obj"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/blasteroids.c.obj -MF CMakeFiles\blasteroids.dir\blasteroids.c.obj.d -o CMakeFiles\blasteroids.dir\blasteroids.c.obj -c C:\ohjelmat\blasteroids\blasteroids.c
+CMakeFiles/blasteroids.dir/src/ship.c.obj: CMakeFiles/blasteroids.dir/flags.make
+CMakeFiles/blasteroids.dir/src/ship.c.obj: C:/ohjelmat/blasteroids/src/ship.c
+CMakeFiles/blasteroids.dir/src/ship.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blasteroids.dir/src/ship.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/src/ship.c.obj -MF CMakeFiles\blasteroids.dir\src\ship.c.obj.d -o CMakeFiles\blasteroids.dir\src\ship.c.obj -c C:\ohjelmat\blasteroids\src\ship.c
 
-CMakeFiles/blasteroids.dir/blasteroids.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/blasteroids.c.i"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\blasteroids.c > CMakeFiles\blasteroids.dir\blasteroids.c.i
+CMakeFiles/blasteroids.dir/src/ship.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/src/ship.c.i"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\src\ship.c > CMakeFiles\blasteroids.dir\src\ship.c.i
 
-CMakeFiles/blasteroids.dir/blasteroids.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/blasteroids.c.s"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\blasteroids.c -o CMakeFiles\blasteroids.dir\blasteroids.c.s
+CMakeFiles/blasteroids.dir/src/ship.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/src/ship.c.s"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\src\ship.c -o CMakeFiles\blasteroids.dir\src\ship.c.s
 
-CMakeFiles/blasteroids.dir/ship.c.obj: CMakeFiles/blasteroids.dir/flags.make
-CMakeFiles/blasteroids.dir/ship.c.obj: C:/ohjelmat/blasteroids/ship.c
-CMakeFiles/blasteroids.dir/ship.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blasteroids.dir/ship.c.obj"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/ship.c.obj -MF CMakeFiles\blasteroids.dir\ship.c.obj.d -o CMakeFiles\blasteroids.dir\ship.c.obj -c C:\ohjelmat\blasteroids\ship.c
+CMakeFiles/blasteroids.dir/src/physics.c.obj: CMakeFiles/blasteroids.dir/flags.make
+CMakeFiles/blasteroids.dir/src/physics.c.obj: C:/ohjelmat/blasteroids/src/physics.c
+CMakeFiles/blasteroids.dir/src/physics.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blasteroids.dir/src/physics.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/src/physics.c.obj -MF CMakeFiles\blasteroids.dir\src\physics.c.obj.d -o CMakeFiles\blasteroids.dir\src\physics.c.obj -c C:\ohjelmat\blasteroids\src\physics.c
 
-CMakeFiles/blasteroids.dir/ship.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/ship.c.i"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\ship.c > CMakeFiles\blasteroids.dir\ship.c.i
+CMakeFiles/blasteroids.dir/src/physics.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/src/physics.c.i"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\src\physics.c > CMakeFiles\blasteroids.dir\src\physics.c.i
 
-CMakeFiles/blasteroids.dir/ship.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/ship.c.s"
-	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\ship.c -o CMakeFiles\blasteroids.dir\ship.c.s
+CMakeFiles/blasteroids.dir/src/physics.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/src/physics.c.s"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\src\physics.c -o CMakeFiles\blasteroids.dir\src\physics.c.s
+
+CMakeFiles/blasteroids.dir/src/asteroid.c.obj: CMakeFiles/blasteroids.dir/flags.make
+CMakeFiles/blasteroids.dir/src/asteroid.c.obj: C:/ohjelmat/blasteroids/src/asteroid.c
+CMakeFiles/blasteroids.dir/src/asteroid.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/blasteroids.dir/src/asteroid.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/src/asteroid.c.obj -MF CMakeFiles\blasteroids.dir\src\asteroid.c.obj.d -o CMakeFiles\blasteroids.dir\src\asteroid.c.obj -c C:\ohjelmat\blasteroids\src\asteroid.c
+
+CMakeFiles/blasteroids.dir/src/asteroid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/src/asteroid.c.i"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\src\asteroid.c > CMakeFiles\blasteroids.dir\src\asteroid.c.i
+
+CMakeFiles/blasteroids.dir/src/asteroid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/src/asteroid.c.s"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\src\asteroid.c -o CMakeFiles\blasteroids.dir\src\asteroid.c.s
+
+CMakeFiles/blasteroids.dir/src/blast.c.obj: CMakeFiles/blasteroids.dir/flags.make
+CMakeFiles/blasteroids.dir/src/blast.c.obj: C:/ohjelmat/blasteroids/src/blast.c
+CMakeFiles/blasteroids.dir/src/blast.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blasteroids.dir/src/blast.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/src/blast.c.obj -MF CMakeFiles\blasteroids.dir\src\blast.c.obj.d -o CMakeFiles\blasteroids.dir\src\blast.c.obj -c C:\ohjelmat\blasteroids\src\blast.c
+
+CMakeFiles/blasteroids.dir/src/blast.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/src/blast.c.i"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\src\blast.c > CMakeFiles\blasteroids.dir\src\blast.c.i
+
+CMakeFiles/blasteroids.dir/src/blast.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/src/blast.c.s"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\src\blast.c -o CMakeFiles\blasteroids.dir\src\blast.c.s
+
+CMakeFiles/blasteroids.dir/src/blasteroids.c.obj: CMakeFiles/blasteroids.dir/flags.make
+CMakeFiles/blasteroids.dir/src/blasteroids.c.obj: C:/ohjelmat/blasteroids/src/blasteroids.c
+CMakeFiles/blasteroids.dir/src/blasteroids.c.obj: CMakeFiles/blasteroids.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blasteroids.dir/src/blasteroids.c.obj"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blasteroids.dir/src/blasteroids.c.obj -MF CMakeFiles\blasteroids.dir\src\blasteroids.c.obj.d -o CMakeFiles\blasteroids.dir\src\blasteroids.c.obj -c C:\ohjelmat\blasteroids\src\blasteroids.c
+
+CMakeFiles/blasteroids.dir/src/blasteroids.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/blasteroids.dir/src/blasteroids.c.i"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\ohjelmat\blasteroids\src\blasteroids.c > CMakeFiles\blasteroids.dir\src\blasteroids.c.i
+
+CMakeFiles/blasteroids.dir/src/blasteroids.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/blasteroids.dir/src/blasteroids.c.s"
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\ohjelmat\blasteroids\src\blasteroids.c -o CMakeFiles\blasteroids.dir\src\blasteroids.c.s
 
 # Object files for target blasteroids
 blasteroids_OBJECTS = \
-"CMakeFiles/blasteroids.dir/blasteroids.c.obj" \
-"CMakeFiles/blasteroids.dir/ship.c.obj"
+"CMakeFiles/blasteroids.dir/src/ship.c.obj" \
+"CMakeFiles/blasteroids.dir/src/physics.c.obj" \
+"CMakeFiles/blasteroids.dir/src/asteroid.c.obj" \
+"CMakeFiles/blasteroids.dir/src/blast.c.obj" \
+"CMakeFiles/blasteroids.dir/src/blasteroids.c.obj"
 
 # External object files for target blasteroids
 blasteroids_EXTERNAL_OBJECTS =
 
-blasteroids.exe: CMakeFiles/blasteroids.dir/blasteroids.c.obj
-blasteroids.exe: CMakeFiles/blasteroids.dir/ship.c.obj
+blasteroids.exe: CMakeFiles/blasteroids.dir/src/ship.c.obj
+blasteroids.exe: CMakeFiles/blasteroids.dir/src/physics.c.obj
+blasteroids.exe: CMakeFiles/blasteroids.dir/src/asteroid.c.obj
+blasteroids.exe: CMakeFiles/blasteroids.dir/src/blast.c.obj
+blasteroids.exe: CMakeFiles/blasteroids.dir/src/blasteroids.c.obj
 blasteroids.exe: CMakeFiles/blasteroids.dir/build.make
 blasteroids.exe: CMakeFiles/blasteroids.dir/linkLibs.rsp
 blasteroids.exe: CMakeFiles/blasteroids.dir/objects1.rsp
 blasteroids.exe: CMakeFiles/blasteroids.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable blasteroids.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\ohjelmat\blasteroids\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable blasteroids.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\blasteroids.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
