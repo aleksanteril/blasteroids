@@ -12,4 +12,4 @@ typedef struct Spaceship{
 void draw_ship(Spaceship *ship);
 void ship_graphics(Spaceship *ship);
 void calculate_ship_movements(Spaceship *ship);
-Spaceship init_ship();
+Spaceship* init_ship();

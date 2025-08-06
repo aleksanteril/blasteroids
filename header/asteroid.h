@@ -15,4 +15,4 @@ typedef struct Asteroid {
 void draw_asteroid(Asteroid *a);
 void asteroid_graphics(Asteroid *a);
 void calculate_asteroid_movements(Asteroid *a);
-Asteroid fire_asteroid();
+Asteroid* create_asteroid(float x, float y);

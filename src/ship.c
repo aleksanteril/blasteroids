@@ -43,7 +43,13 @@ void calculate_ship_movements(Spaceship *ship) {
       ship->y = fmod(ship->y + display_y, display_y);
 }
 
-Spaceship init_ship() {
-      Spaceship ship = {0, 0, 0, 0, 0, al_map_rgb(0, 255, 0)};
+Spaceship* init_ship() {
+      Spaceship* ship = malloc(sizeof(Spaceship));
+      ship->x = display_x / 2;
+      ship->y = display_y / 2;
+      ship->speed = 0;
+      ship->heading = 0;
+      ship->gone = 0;
+      ship->color = al_map_rgb(0, 255, 0);
       return ship;
 }

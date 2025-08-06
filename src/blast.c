@@ -26,9 +26,9 @@ void calculate_blast_movements(Blast *b) {
       b->x += sin(b->heading) * b->speed;
       b->y -= cos(b->heading) * b->speed;
 
-      if ((b->x > display_x) || (b->x < display_x))
+      if ((b->x > display_x) || (b->x < 0))
             b->gone = 1;
-      else if ((b->y > display_y) || (b->x < display_y))
+      else if ((b->y > display_y) || (b->y < 0))
             b->gone = 1;
 }
 
