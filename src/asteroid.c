@@ -22,6 +22,7 @@ void asteroid_graphics(Asteroid *a) {
 void draw_asteroid(Asteroid *a) {
       ALLEGRO_TRANSFORM transform;
       al_identity_transform(&transform);
+      al_scale_transform(&transform, a->scale, a->scale);
       al_rotate_transform(&transform, a->twist);
       al_translate_transform(&transform, a->x, a->y);
       al_use_transform(&transform);
@@ -50,10 +51,12 @@ Asteroid* create_asteroid(float x, float y) {
       a->x = x;
       a->y = y;
       a->heading = randint(1, 628)*0.01; //Values between 0.01 - 6.28
-      a->speed = randint(10, 30)*0.1; //Between 1-3
+      a->speed = randint(10, 20)*0.1; //Between 1-3
       a->rot_velocity = randint(1, 50)*0.001; //Between 0.001-0.05
+      a->scale = 1.5;
       a->twist = 0;
       a->gone = 0;
-      a->color = al_map_rgb(255, 0, 0);
+      a->color = al_map_rgb(250, 250, 255);
+      a->next = NULL;
       return a;
 }

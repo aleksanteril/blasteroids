@@ -9,9 +9,10 @@ typedef struct Blast {
       float speed;
       int gone;
       ALLEGRO_COLOR color;
+      struct Blast *next;
+      struct Blast *prev;
 } Blast;
 
 void draw_blast(Blast *b);
-void blast_graphics(Blast *b);
 void calculate_blast_movements(Blast *b);
 Blast* fire_blast(Spaceship *ship);

@@ -31,7 +31,7 @@ int main()
       al_start_timer(timer);
       while (event.type != ALLEGRO_EVENT_DISPLAY_CLOSE) {
             al_wait_for_event(queue, &event);
-            process_inputs();
+            process_inputs(&event);
             if (event.type != ALLEGRO_EVENT_TIMER)
                   continue;
             update_game_state();

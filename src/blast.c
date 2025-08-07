@@ -37,8 +37,9 @@ Blast* fire_blast(Spaceship *ship) {
       b->x = ship->x;
       b->y = ship->y;
       b->heading = ship->heading;
-      b->speed = 20;
+      b->speed = 13;
       b->gone = 0;
       b->color = al_map_rgb(255, 0, 0);
+      b->next = NULL;
       return b;
 }

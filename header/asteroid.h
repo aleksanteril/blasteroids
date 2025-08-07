@@ -10,9 +10,10 @@ typedef struct Asteroid {
       float scale;
       int gone;
       ALLEGRO_COLOR color;
+      struct Asteroid *next;
+      struct Asteroid *prev;
 } Asteroid;
 
 void draw_asteroid(Asteroid *a);
-void asteroid_graphics(Asteroid *a);
 void calculate_asteroid_movements(Asteroid *a);
 Asteroid* create_asteroid(float x, float y);
