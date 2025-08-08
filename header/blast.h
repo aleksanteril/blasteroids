@@ -7,10 +7,10 @@ typedef struct Blast {
       float y;
       float heading;
       float speed;
+      float radius;
       int gone;
       ALLEGRO_COLOR color;
       struct Blast *next;
-      struct Blast *prev;
 } Blast;
 
 void draw_blast(Blast *b);

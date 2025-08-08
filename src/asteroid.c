@@ -17,6 +17,7 @@ void asteroid_graphics(Asteroid *a) {
       al_draw_line(20, 10, 10, 20, a->color, 3.0f);
       al_draw_line(10, 20, 0, 15, a->color, 3.0f);
       al_draw_line(0, 15, -20, 20, a->color, 3.0f);
+      //al_draw_circle(0, 0, a->radius, al_map_rgb(255, 0, 0), 3.0f);
 }
 
 void draw_asteroid(Asteroid *a) {
@@ -54,6 +55,7 @@ Asteroid* create_asteroid(float x, float y) {
       a->speed = randint(10, 20)*0.1; //Between 1-3
       a->rot_velocity = randint(1, 50)*0.001; //Between 0.001-0.05
       a->scale = 1.5;
+      a->radius = 30;
       a->twist = 0;
       a->gone = 0;
       a->color = al_map_rgb(250, 250, 255);

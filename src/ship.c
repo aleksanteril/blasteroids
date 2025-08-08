@@ -11,6 +11,7 @@ void ship_graphics(Spaceship *ship) {
       al_draw_line(0, -11, 8, 9, ship->color, 3.0f);
       al_draw_line(-6, 4, -1, 4, ship->color, 3.0f);
       al_draw_line(6, 4, 1, 4, ship->color, 3.0f);
+      //al_draw_circle(0, 0, ship->radius, al_map_rgb(255, 0, 0), 3.0f);
 }
 
 void draw_ship(Spaceship *ship) {
@@ -43,6 +44,14 @@ void calculate_ship_movements(Spaceship *ship) {
       ship->y = fmod(ship->y + display_y, display_y);
 }
 
+void reset_ship(Spaceship *ship) {
+      ship->x = display_x / 2;
+      ship->y = display_y / 2;
+      ship->speed = 0;
+      ship->heading = 0;
+      ship->gone = 0;
+}
+
 Spaceship* init_ship() {
       Spaceship* ship = malloc(sizeof(Spaceship));
       ship->x = display_x / 2;
@@ -50,6 +59,7 @@ Spaceship* init_ship() {
       ship->speed = 0;
       ship->heading = 0;
       ship->gone = 0;
+      ship->radius = 13;
       ship->color = al_map_rgb(0, 255, 0);
       return ship;
 }

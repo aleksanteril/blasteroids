@@ -1,10 +1,15 @@
 #include "../header/core.h"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_font.h>
+#include <stdio.h>
 
 //Screen x, and y
 const int display_x = 1000;
 const int display_y = 1000;
+
+int score = 0;
+int lives = 3;
 
 int main()
 {     
@@ -17,9 +22,10 @@ int main()
       al_init(); // Init allegro
       al_install_keyboard(); //Init keyboard
       al_init_primitives_addon();
+      al_init_font_addon();
       queue = al_create_event_queue(); //Inputs read from player
       disp = al_create_display(display_x, display_y); //Init display
-      timer = al_create_timer(1.0 / 60.0); // Game tickrate 30Hz
+      timer = al_create_timer(1.0 / 30.0); // Game tickrate 30Hz
 
       /* Register the event queue sources */
       al_register_event_source(queue, al_get_keyboard_event_source());

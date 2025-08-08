@@ -6,6 +6,7 @@
 
 void blast_graphics(Blast *b) {
       al_draw_line(0, -11, 0, -16, b->color, 3.0f);
+      //al_draw_circle(0, -11, b->radius, al_map_rgb(255, 0, 0), 3.0f);
 }
 
 void draw_blast(Blast *b) {
@@ -39,7 +40,8 @@ Blast* fire_blast(Spaceship *ship) {
       b->heading = ship->heading;
       b->speed = 13;
       b->gone = 0;
-      b->color = al_map_rgb(255, 0, 0);
+      b->radius = 8;
+      b->color = al_map_rgb(253, 253, 0);
       b->next = NULL;
       return b;
 }

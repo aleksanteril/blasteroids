@@ -4,4 +4,4 @@ project(blasteroids)
 set(SOURCES src/ship.c src/asteroid.c src/blast.c src/blasteroids.c src/utilities.c src/core.c)
 
 add_executable(blasteroids ${SOURCES})
-target_link_libraries(blasteroids allegro allegro_color allegro_primitives)
+target_link_libraries(blasteroids allegro allegro_color allegro_primitives allegro_font)
