@@ -179,6 +179,7 @@ void collision_detection() {
             distance_squared = x_apart * x_apart + y_apart * y_apart;
             if (distance_squared < radius_sum * radius_sum) {
                   ship->gone = 1;
+                  break;
             }
             a = a->next;
       }
