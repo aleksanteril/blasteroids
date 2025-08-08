@@ -125,21 +125,29 @@ void calculate_object_mov() {
 /* KOODI DUPLIKAATIOTA VOIDAAN VÄHENTÄÄ MACROILLA?*/
 
 void collision_detection() {
-      double x_apart;
-      double y_apart;
-      double distance;
+      float x_apart;
+      float y_apart;
+      float distance_squared;
+      float radius_sum;
 
       Blast *b = blast_head;
       Asteroid *a = asteroid_head;
       //Detect bullet collisions with asteroids
       while (b) {
-              while(a) {
+            while(a) {
                   x_apart = b->x - a->x;
                   y_apart = b->y - a->y;
-                  distance = sqrt(pow(x_apart, 2) + pow(y_apart, 2));
+                  radius_sum = b->radius + a->radius;
 
-                  //Collision bullet and asteroid
-                  if (distance < (b->radius + a->radius)) {
+                  //Bounding box check
+                  if (fabs(x_apart) > radius_sum || fabs(y_apart) > radius_sum) {
+                        a = a->next;
+                        continue;
+                  }
+
+                  //circle radii check
+                  distance_squared = x_apart * x_apart + y_apart * y_apart;
+                  if (distance_squared < radius_sum * radius_sum) {
                         b->gone = 1;
                         a->gone = 1;
                         score += 100;
@@ -159,10 +167,17 @@ void collision_detection() {
       while(a) {
             x_apart = ship->x - a->x;
             y_apart = ship->y - a->y;
-            distance = sqrt(pow(x_apart, 2) + pow(y_apart, 2));
+            radius_sum = ship->radius + a->radius;
 
-            //Collision
-            if (distance < (ship->radius + a->radius)) {
+            //Bounding box check
+            if (fabs(x_apart) > radius_sum || fabs(y_apart) > radius_sum) {
+                  a = a->next;
+                  continue;
+            }
+
+            //Circle radii check
+            distance_squared = x_apart * x_apart + y_apart * y_apart;
+            if (distance_squared < radius_sum * radius_sum) {
                   ship->gone = 1;
             }
             a = a->next;
@@ -171,6 +186,9 @@ void collision_detection() {
 
 static ALLEGRO_KEYBOARD_STATE state;
 void process_inputs(ALLEGRO_EVENT *event) {
+      if (ship->gone)
+            return;
+
       al_get_keyboard_state(&state);
 
       //Heading change is a function of the ship's speed -0.005*spd and a base of 0.1
