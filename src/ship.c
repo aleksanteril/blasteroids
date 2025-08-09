@@ -60,6 +60,7 @@ Spaceship* init_ship() {
       ship->heading = 0;
       ship->gone = 0;
       ship->radius = 13;
+      ship->time_died = 0;
       ship->color = al_map_rgb(0, 255, 0);
       return ship;
 }

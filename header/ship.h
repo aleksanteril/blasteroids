@@ -6,6 +6,7 @@ typedef struct Spaceship{
       float heading;
       float speed;
       float radius;
+      double time_died;
       int gone;
       ALLEGRO_COLOR color;
 } Spaceship;

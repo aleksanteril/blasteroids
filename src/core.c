@@ -3,12 +3,15 @@
 #include "../header/blast.h"
 #include "../header/asteroid.h"
 #include "../header/utilities.h"
+#include "../header/hud.h"
 #include <math.h>
 
 //Linked lists here to iterate over, to draw and calculate physics
 static Asteroid* asteroid_head = NULL;
 static Blast* blast_head = NULL;
 static Spaceship* ship;
+
+static double last_dead = 0;
 
 extern int display_x;
 extern int display_y;
@@ -87,7 +90,6 @@ void cleanup_objects() {
             as_current = &((*as_current)->next);
       }
 
-      //Ship reset if dead, Need to make a invincibility timer of 5s when died
       if (ship->gone) {
             lives -= 1;
             reset_ship(ship);
@@ -160,8 +162,10 @@ void collision_detection() {
       }
       
 
-      //5second invicibility
-      
+      //If just died invicibility still on
+      if ((al_get_time() - ship->time_died) < 5)
+            return;
+
       a = asteroid_head;
       //Detect ship collision with asteroids
       while(a) {
@@ -179,6 +183,7 @@ void collision_detection() {
             distance_squared = x_apart * x_apart + y_apart * y_apart;
             if (distance_squared < radius_sum * radius_sum) {
                   ship->gone = 1;
+                  ship->time_died = al_get_time();
                   break;
             }
             a = a->next;
@@ -213,6 +218,7 @@ void draw_loop() {
       al_clear_to_color(al_map_rgb(0, 0, 0));
       draw_ship(ship);
       draw_objects();
+      draw_hud();
       al_flip_display();
 }
 
@@ -224,6 +230,7 @@ void physics_loop() {
 
 void init_game() {
       ship = init_ship();
+      init_hud();
       for (int i = 0; i < 20; i++) {
             generate_asteroid();
       }
