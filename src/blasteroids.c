@@ -9,7 +9,7 @@ const int display_x = 1000;
 const int display_y = 1000;
 
 int score = 0;
-int lives = 1;
+int lives = 3;
 
 int main()
 {     
@@ -45,5 +45,6 @@ int main()
                   continue;
             update_game_state();
       }
+      cleanup_heap();
       return 0;
 }

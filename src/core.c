@@ -190,6 +190,28 @@ void collision_detection() {
       }
 }
 
+//Cleanup for example on game exit
+void cleanup_heap() {
+
+      while(asteroid_head) {
+            Asteroid *temp = asteroid_head;
+            asteroid_head = asteroid_head->next;
+            free(temp);
+      }
+
+      while(blast_head) {
+            Blast *temp = blast_head;
+            blast_head = blast_head->next;
+            free(temp);
+      }
+
+      if (ship) {
+            free(ship);
+            ship = NULL;
+      }
+
+}
+
 static ALLEGRO_KEYBOARD_STATE state;
 void process_inputs(ALLEGRO_EVENT *event) {
       if (ship->gone)
