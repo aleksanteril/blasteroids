@@ -1,10 +1,8 @@
 #include "../header/ship.h"
+#include "../header/core.h"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include <math.h>
-
-const int SPEED_MAX = 10;
-const int SPEED_MIN = 0;
 
 void ship_graphics(Spaceship *ship) {
       al_draw_line(-8, 9, 0, -11, ship->color, 3.0f);
@@ -23,30 +21,26 @@ void draw_ship(Spaceship *ship) {
       ship_graphics(ship);
 }
 
-
-extern int display_x;
-extern int display_y;
-
 void calculate_ship_movements(Spaceship *ship) {
       //Limits
       //No reverse
-      if (ship->speed < SPEED_MIN) 
-            ship->speed = SPEED_MIN;
-      if (ship->speed > SPEED_MAX)
-            ship->speed = SPEED_MAX;
+      if (ship->speed < MIN_SPEED) 
+            ship->speed = MIN_SPEED;
+      if (ship->speed > MAX_SPEED)
+            ship->speed = MAX_SPEED;
 
       //Y and X movement
       ship->x += sin(ship->heading) * ship->speed;
       ship->y -= cos(ship->heading) * ship->speed;
 
       //Boundary check
-      ship->x = fmod(ship->x + display_x, display_x);
-      ship->y = fmod(ship->y + display_y, display_y);
+      ship->x = fmod(ship->x + DISPLAY_X, DISPLAY_X);
+      ship->y = fmod(ship->y + DISPLAY_Y, DISPLAY_Y);
 }
 
 void reset_ship(Spaceship *ship) {
-      ship->x = display_x / 2;
-      ship->y = display_y / 2;
+      ship->x = DISPLAY_X / 2;
+      ship->y = DISPLAY_Y / 2;
       ship->speed = 0;
       ship->heading = 0;
       ship->gone = 0;
@@ -54,8 +48,8 @@ void reset_ship(Spaceship *ship) {
 
 Spaceship* init_ship() {
       Spaceship* ship = malloc(sizeof(Spaceship));
-      ship->x = display_x / 2;
-      ship->y = display_y / 2;
+      ship->x = DISPLAY_X / 2;
+      ship->y = DISPLAY_Y / 2;
       ship->speed = 0;
       ship->heading = 0;
       ship->gone = 0;

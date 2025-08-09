@@ -11,18 +11,13 @@ static Asteroid* asteroid_head = NULL;
 static Blast* blast_head = NULL;
 static Spaceship* ship;
 
-static double last_dead = 0;
-
-extern int display_x;
-extern int display_y;
-
 extern int score;
 extern int lives;
 
 /* KOODI DUPLIKAATIOTA VOIDAAN VÄHENTÄÄ MACROILLA?*/
 void generate_asteroid() {
-      float x = (float)randint(0, display_x);
-      float y = (float)randint(0, display_y);
+      float x = (float)randint(0, DISPLAY_X);
+      float y = (float)randint(0, DISPLAY_Y);
       Asteroid *a = create_asteroid(x, y);
 
       //Creating first case, assign to head.
@@ -212,8 +207,8 @@ void cleanup_heap() {
 
 }
 
-static ALLEGRO_KEYBOARD_STATE state;
 void process_inputs(ALLEGRO_EVENT *event) {
+      static ALLEGRO_KEYBOARD_STATE state;
       if (ship->gone)
             return;
 

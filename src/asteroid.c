@@ -1,5 +1,6 @@
 #include "../header/asteroid.h"
 #include "../header/utilities.h"
+#include "../header/core.h"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include <math.h>
@@ -30,10 +31,6 @@ void draw_asteroid(Asteroid *a) {
       asteroid_graphics(a);
 }
 
-
-extern int display_x;
-extern int display_y;
-
 void calculate_asteroid_movements(Asteroid *a) {
       //Y and X movement
       a->x += sin(a->heading) * a->speed;
@@ -43,8 +40,8 @@ void calculate_asteroid_movements(Asteroid *a) {
       a->twist += a->rot_velocity;
 
       //Boundary check
-      a->x = fmod(a->x + display_x, display_x);
-      a->y = fmod(a->y + display_y, display_y);
+      a->x = fmod(a->x + DISPLAY_X, DISPLAY_X);
+      a->y = fmod(a->y + DISPLAY_Y, DISPLAY_Y);
 }
 
 Asteroid* create_asteroid(float x, float y) {

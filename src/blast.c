@@ -1,5 +1,6 @@
 #include "../header/blast.h"
 #include "../header/ship.h"
+#include "../header/core.h"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include <math.h>
@@ -18,18 +19,14 @@ void draw_blast(Blast *b) {
       blast_graphics(b);
 }
 
-
-extern int display_x;
-extern int display_y;
-
 void calculate_blast_movements(Blast *b) {
       //Y and X movement
       b->x += sin(b->heading) * b->speed;
       b->y -= cos(b->heading) * b->speed;
 
-      if ((b->x > display_x) || (b->x < 0))
+      if ((b->x > DISPLAY_X) || (b->x < 0))
             b->gone = 1;
-      else if ((b->y > display_y) || (b->y < 0))
+      else if ((b->y > DISPLAY_Y) || (b->y < 0))
             b->gone = 1;
 }
 

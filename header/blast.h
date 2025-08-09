@@ -1,3 +1,6 @@
+#ifndef BLAST_H
+#define BLAST_H
+
 #include <allegro5/allegro_color.h>
 
 typedef struct Spaceship Spaceship;
@@ -16,3 +19,5 @@ typedef struct Blast {
 void draw_blast(Blast *b);
 void calculate_blast_movements(Blast *b);
 Blast* fire_blast(Spaceship *ship);
+
+#endif

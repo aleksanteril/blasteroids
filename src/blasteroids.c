@@ -4,10 +4,6 @@
 #include <stdio.h>
 #include "../header/hud.h"
 
-//Screen x, and y
-const int display_x = 1000;
-const int display_y = 1000;
-
 int score = 0;
 int lives = 3;
 
@@ -23,7 +19,7 @@ int main()
       al_install_keyboard(); //Init keyboard
       al_init_primitives_addon();
       queue = al_create_event_queue(); //Inputs read from player
-      disp = al_create_display(display_x, display_y); //Init display
+      disp = al_create_display(DISPLAY_X, DISPLAY_Y); //Init display
       timer = al_create_timer(1.0 / 30.0); // Game tickrate 30Hz
 
       /* Register the event queue sources */
