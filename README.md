@@ -5,3 +5,4 @@ Blasteroids style game using Allegro
 - Fire rate limiting
 - Asteroid respawning
 - Explosion effect when asteroid destroyed
+- Make asteroids split multiple times and spawn them with varying sizes
